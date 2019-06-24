@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BitsAmericas": {
+    "MySpotifyTest": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "sass"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/BitsAmericas",
+            "outputPath": "dist/MySpotifyTest",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -62,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "BitsAmericas:build"
+            "browserTarget": "MySpotifyTest:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "BitsAmericas:build:production"
+              "browserTarget": "MySpotifyTest:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "BitsAmericas:build"
+            "browserTarget": "MySpotifyTest:build"
           }
         },
         "test": {
@@ -88,7 +84,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -110,15 +106,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "BitsAmericas:serve"
+            "devServerTarget": "MySpotifyTest:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "BitsAmericas:serve:production"
+              "devServerTarget": "MySpotifyTest:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "BitsAmericas"
+  "defaultProject": "MySpotifyTest"
 }
